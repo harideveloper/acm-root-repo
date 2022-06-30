@@ -1,7 +1,6 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: feature-busybox
   name: cluster-role-feature-busybox
 rules:
 - apiGroups: [""]
