@@ -5,7 +5,6 @@ metadata:
   name: cluster-role-feature-busybox
 rules:
 - apiGroups: [""]
-  resources: 
-  - "*"
+  resources: ["pods"]
   verbs: 
   - "*"
