@@ -6,7 +6,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: ns-reconciler-busybox
-  namespace: config-management-system
+  namespace: feature-busybox
 roleRef:
   kind: ClusterRole
   name: cluster-role-feature-busybox
