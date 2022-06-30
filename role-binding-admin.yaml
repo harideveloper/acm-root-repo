@@ -1,7 +1,7 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: role-binding-feature-busybox
+  name: role-binding-feature-busybox-admin
   namespace: feature-busybox
 subjects:
 - kind: ServiceAccount
@@ -9,5 +9,5 @@ subjects:
   namespace: config-management-system
 roleRef:
   kind: ClusterRole
-  name: cluster-role-feature-busybox
+  name: admin
   apiGroup: rbac.authorization.k8s.io
