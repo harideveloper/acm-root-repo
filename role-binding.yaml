@@ -7,6 +7,9 @@ subjects:
 - kind: ServiceAccount
   name: ns-reconciler-busybox
   namespace: config-management-system
+- kind: ServiceAccount
+  name: ns-reconciler-busybox
+  namespace: feature-busybox
 roleRef:
   kind: ClusterRole
   name: cluster-role-feature-busybox
