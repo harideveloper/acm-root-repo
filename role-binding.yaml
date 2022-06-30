@@ -2,10 +2,10 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: role-binding-feature-busybox
-  namespace: acm-busybox
+  namespace: devacm
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-busybox
+  name: ns-reconciler-devacm
   namespace: config-management-system
 roleRef:
   kind: Role
