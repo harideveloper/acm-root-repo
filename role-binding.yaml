@@ -8,6 +8,6 @@ subjects:
   name: ns-reconciler-busybox
   namespace: config-management-system
 roleRef:
-  kind: ClusterRole
+  kind: Role
   name: cluster-role-feature-busybox
   apiGroup: rbac.authorization.k8s.io
