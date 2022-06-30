@@ -7,6 +7,11 @@ subjects:
 - kind: ServiceAccount
   name: ns-reconciler-busybox
   namespace: feature-busybox
+  apiGroup: rbac.authorization.k8s.io
+- kind: ServiceAccount
+  name: ns-reconciler-busybox
+  namespace: config-management-system
+  apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
   name: cluster-role-feature-busybox
