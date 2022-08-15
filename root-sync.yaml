@@ -9,4 +9,4 @@ spec:
     repo: https://github.com/harideveloper/acm-root-repo.git
     branch: main
     dir: ""
-    auth: none
+    auth: token
