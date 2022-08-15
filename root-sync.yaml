@@ -10,3 +10,5 @@ spec:
     branch: main
     dir: ""
     auth: token
+    secretRef:
+       name: git-creds
