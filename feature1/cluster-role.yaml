@@ -9,10 +9,6 @@ rules:
   verbs:
   - "*"
 - apiGroups: [""]
-  resources: ["services"]
-  verbs:
-  - "*"
-- apiGroups: [""]
   resources: ["deployments.apps"]
   verbs:
   - "*"
@@ -32,3 +28,7 @@ rules:
   - list
   - watch
   - update
+- apiGroups: [""]
+  resources: ["services"]
+  verbs:
+  - "*"
