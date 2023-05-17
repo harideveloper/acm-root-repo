@@ -8,5 +8,5 @@ spec:
   git:
     repo: https://github.com/harideveloper/acm-feature1.git
     branch: main
-    dir: feature/busybox
+    dir: 
     auth: none
