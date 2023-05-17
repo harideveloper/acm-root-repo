@@ -5,34 +5,35 @@ metadata:
   namespace : devacm
 rules:
 - apiGroups: [""]
-  resources: ["pods"]
-  verbs:
-  - "*"
-- apiGroups: [""]
-  resources: ["deployments.apps"]
+  resources: ["*"]
   verbs:
   - "*"
 
 
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: cluster-role-feature-busybox-pvc
-rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs:
-  - "*"
-- apiGroups: [""]
-  resources: ["persistentvolumes,persistentvolumeclaims,persistentvolumeclaims/status"]
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - watch
-  - update
-- apiGroups: [""]
-  resources: ["services"]
-  verbs:
-  - "*"
+
+# kind: ClusterRole
+# apiVersion: rbac.authorization.k8s.io/v1
+# metadata:
+#   name: cluster-role-feature-busybox-pvc
+# rules:
+# - apiGroups: [""]
+#   resources: ["pods"]
+#   verbs:
+#   - "*"
+# - apiGroups: [""]
+#   resources: ["persistentvolumes,persistentvolumeclaims,persistentvolumeclaims/status"]
+#   verbs:
+#   - create
+#   - delete
+#   - get
+#   - list
+#   - watch
+#   - update
+# - apiGroups: [""]
+#   resources: ["services"]
+#   verbs:
+#   - "*"
+# - apiGroups: [""]
+#   resources: ["deployments.apps"]
+#   verbs:
+#   - "*"
