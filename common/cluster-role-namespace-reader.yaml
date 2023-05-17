@@ -4,5 +4,5 @@ metadata:
   name: namespace-reader
 rules:
 - apiGroups: [""]
-  resources: ["namespaces","deployments","services"]
+  resources: ["namespaces"]
   verbs: ["get", "watch", "list"]
