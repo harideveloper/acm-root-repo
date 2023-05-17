@@ -12,6 +12,10 @@ rules:
   resources: ["services"]
   verbs:
   - "*"
+- apiGroups: [""]
+  resources: ["persistentvolumes,persistentvolumeclaims,persistentvolumeclaims/status"]
+  verbs:
+  - "*"
 - apiGroups: ["apps"]
   resources: ["deployments"]
   verbs:
