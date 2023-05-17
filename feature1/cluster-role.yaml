@@ -8,6 +8,10 @@ rules:
   resources: ["pods"]
   verbs:
   - "*"
+- apiGroups: [""]
+  resources: ["services"]
+  verbs:
+  - "*"
 - apiGroups: ["apps"]
   resources: ["deployments"]
   verbs:
