@@ -5,6 +5,10 @@ metadata:
   namespace : devacm
 rules:
 - apiGroups: [""]
-  resources: ["pods","deployments.apps","persistentvolumeclaims","services"]
+  resources: ["pods"]
+  verbs:
+  - "*"
+- apiGroups: ["apps"]
+  resources: ["deployments"]
   verbs:
   - "*"
