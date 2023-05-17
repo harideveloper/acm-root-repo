@@ -20,6 +20,10 @@ metadata:
   name: cluster-role-feature-busybox-pvc
 rules:
 - apiGroups: [""]
+  resources: ["pods"]
+  verbs:
+  - "*"
+- apiGroups: [""]
   resources: ["persistentvolumes,persistentvolumeclaims,persistentvolumeclaims/status"]
   verbs:
   - create
