@@ -1,14 +1,14 @@
-apiVersion: configsync.gke.io/v1beta1
-kind: RootSync
-metadata:
-  name: root-sync
-  namespace: config-management-system
-spec:
-  sourceFormat: unstructured
-  git:
-    repo: https://github.com/harideveloper/acm-root-repo.git
-    branch: main
-    dir: ""
-    auth: token
-    secretRef:
-       name: git-creds
+# apiVersion: configsync.gke.io/v1beta1
+# kind: RootSync
+# metadata:
+#   name: root-sync
+#   namespace: config-management-system
+# spec:
+#   sourceFormat: unstructured
+#   git:
+#     repo: https://github.com/harideveloper/acm-root-repo.git
+#     branch: main
+#     dir: ""
+#     auth: token
+#     secretRef:
+#        name: git-creds
