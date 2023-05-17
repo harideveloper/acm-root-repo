@@ -12,6 +12,18 @@ rules:
   resources: ["services"]
   verbs:
   - "*"
+- apiGroups: ["apps"]
+  resources: ["deployments"]
+  verbs:
+  - "*"
+
+
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: cluster-role-feature-busybox-pvc
+  namespace : devacm
+rules:
 - apiGroups: [""]
   resources: ["persistentvolumes,persistentvolumeclaims,persistentvolumeclaims/status"]
   verbs:
@@ -21,7 +33,3 @@ rules:
   - list
   - watch
   - update
-- apiGroups: ["apps"]
-  resources: ["deployments"]
-  verbs:
-  - "*"
