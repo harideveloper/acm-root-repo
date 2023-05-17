@@ -12,8 +12,8 @@ rules:
   resources: ["services"]
   verbs:
   - "*"
-- apiGroups: ["apps"]
-  resources: ["deployments"]
+- apiGroups: [""]
+  resources: ["deployments.apps"]
   verbs:
   - "*"
 
